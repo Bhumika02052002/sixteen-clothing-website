@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Sixteen Clothing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SIXTEEN CLOTHING</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span class="badge bg-primary cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Header -->
+    <section class="hero-section py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold mb-4">OUR PRODUCTS</h1>
+            <h2 class="display-6 mb-5">Discover our latest collection</h2>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h2 class="section-title">All Products</h2>
+                    <p class="section-subtitle">Browse our complete collection</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Products will be loaded from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">SIXTEEN CLOTHING</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Helpful Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light">Home</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-light">Our Products</a></li>
+                        <li class="mb-2"><a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#aboutModal">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="mb-4">Additional Pages</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Delivery Information</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Returns Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">Copyright © 2023 Sixteen Clothing Co., Ltd. - Design: TemplateMo</p>
+                </div>
+                
+                <div class="col-md-6 text-md-end">
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Load products on products page
+        document.addEventListener('DOMContentLoaded', function() {
+            const products = [
+                {
+                    id: 1,
+                    name: "Classic White Tee",
+                    price: 25.75,
+                    image: "images/prd1.jpg",
+                    description: "Premium quality cotton t-shirt for everyday wear. Comfortable and stylish.",
+                    reviews: 34,
+                    rating: 4.5
+                },
+                {
+                    id: 2,
+                    name: "Denim Jacket",
+                    price: 30.25,
+                    image: "images/prd2.jpg",
+                    description: "Vintage style denim jacket with a modern fit. Perfect for layering.",
+                    reviews: 40,
+                    rating: 4
+                },
+                {
+                    id: 3,
+                    name: "Summer Dress",
+                    price: 20.45,
+                    image: "images/prd3.jpg",
+                    description: "Lightweight floral dress perfect for summer days and evenings.",
+                    reviews: 50,
+                    rating: 5
+                },
+                {
+                    id: 4,
+                    name: "Casual Pants",
+                    price: 15.25,
+                    image: "images/prd4.jpg",
+                    description: "Comfortable and stylish casual pants for everyday wear.",
+                    reviews: 51,
+                    rating: 4.5
+                },
+                {
+                    id: 5,
+                    name: "Sports T-Shirt",
+                    price: 12.50,
+                    image: "images/prd5.jpg",
+                    description: "Moisture-wicking sports t-shirt for your active lifestyle.",
+                    reviews: 42,
+                    rating: 4
+                },
+                {
+                    id: 6,
+                    name: "Winter Sweater",
+                    price: 22.50,
+                    image: "images/prd6.jpg",
+                    description: "Warm and cozy sweater for the cold winter months.",
+                    reviews: 42,
+                    rating: 5
+                },
+                {
+                    id: 7,
+                    name: "Leather Jacket",
+                    price: 45.99,
+                    image: "https://via.placeholder.com/300x250",
+                    description: "Genuine leather jacket for a stylish and rugged look.",
+                    reviews: 28,
+                    rating: 4.5
+                },
+                {
+                    id: 8,
+                    name: "Formal Shirt",
+                    price: 35.50,
+                    image: "https://via.placeholder.com/300x250",
+                    description: "Crisp formal shirt for business meetings and special occasions.",
+                    reviews: 36,
+                    rating: 4
+                },
+                {
+                    id: 9,
+                    name: "Running Shoes",
+                    price: 65.00,
+                    image: "https://via.placeholder.com/300x250",
+                    description: "Comfortable running shoes with excellent support and cushioning.",
+                    reviews: 58,
+                    rating: 4.5
+                }
+            ];
+            
+            const productsContainer = document.querySelector('.products-section .row.g-4');
+            
+            products.forEach(product => {
+                const stars = generateStars(product.rating);
+                
+                const productHTML = `
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card h-100">
+                            <div class="card-img-top placeholder-image" style="background-image: url('${product.image}')"></div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">${product.name}</h5>
+                                <p class="card-text price">$${product.price.toFixed(2)}</p>
+                                <p class="card-text description">${product.description}</p>
+                                <div class="reviews">
+                                    <div class="stars">
+                                        ${stars}
+                                    </div>
+                                    <span class="review-count">Reviews (${product.reviews})</span>
+                                </div>
+                                <button class="btn btn-primary mt-3 add-to-cart" 
+                                    data-product-id="${product.id}" 
+                                    data-product-name="${product.name}" 
+                                    data-product-price="${product.price}">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                productsContainer.innerHTML += productHTML;
+            });
+            
+            // Reattach event listeners to the new Add to Cart buttons
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product-id');
+                    const productName = this.getAttribute('data-product-name');
+                    const productPrice = parseFloat(this.getAttribute('data-product-price'));
+                    
+                    addToCart(productId, productName, productPrice, 1);
+                    showToast(`${productName} added to cart!`);
+                });
+            });
+            
+            // Animate product cards
+            setTimeout(() => {
+                const productCards = document.querySelectorAll('.product-card');
+                productCards.forEach(card => {
+                    card.classList.add('animate');
+                });
+            }, 100);
+        });
+        
+        function generateStars(rating) {
+            let starsHTML = '';
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 !== 0;
+            
+            for (let i = 0; i < fullStars; i++) {
+                starsHTML += '<i class="fas fa-star"></i>';
+            }
+            
+            if (hasHalfStar) {
+                starsHTML += '<i class="fas fa-star-half-alt"></i>';
+            }
+            
+            const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+            for (let i = 0; i < emptyStars; i++) {
+                starsHTML += '<i class="far fa-star"></i>';
+            }
+            
+            return starsHTML;
+        }
+    </script>
+</body>
+</html>
